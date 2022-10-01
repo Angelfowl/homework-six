@@ -1,0 +1,73 @@
+nav {
+    max-width: 980px;
+    height: 94px;
+    // background-color: darkmagenta;
+    margin: 0 auto;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        width: 40%;
+        height: 42px;
+        // background-color: blueviolet;
+    }
+
+    .links {
+        width: 60%;
+        height: 40px;
+        // background-color: hotpink;
+        color: #79ADDC;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        a {
+            font-family: Sora;
+            font-size: 15px;
+            color: #000;
+            text-decoration: none;
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 970px) {
+    nav {
+        width: 600px;
+
+        .links {
+
+            a {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    nav {
+        width: 445px;
+        display: block;
+
+        .logo {
+            margin-left: 175px;
+        }
+
+        .links{
+            max-width: 550px;
+            margin-left: 75px;
+            text-align: center;
+
+            a {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+    }
+}
